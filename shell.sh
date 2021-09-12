@@ -8,7 +8,7 @@ echo '啊'
 echo '这'
 chsh -s /bin/zsh
 echo '错'
-bash <(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
+#bash <(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
 
 sed -i "s/robbyrussell/agnoster/g" ~/.zshrc
 echo '了'
