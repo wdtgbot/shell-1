@@ -6,7 +6,7 @@ echo '啊'
 #echo net.core.default_qdisc=fq >> /etc/sysctl.conf
 #echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf
 echo '这'
-y | bash <(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
+y | sh <(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
 echo '错'
 sed -i "s/robbyrussell/agnoster/g" ~/.zshrc
 echo '了'
