@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install curl wget zsh git -y
+apt install curl wget zsh git sudo -y
 sh <(curl -fsSL https://get.docker.com)
 echo net.core.default_qdisc=fq >> /etc/sysctl.conf
 echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf
