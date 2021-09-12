@@ -1,9 +1,10 @@
 #!/bin/bash
 apt install curl wget zsh git sudo -y
+chsh -s /bin/zsh
 sh <(curl -fsSL https://get.docker.com)
 echo net.core.default_qdisc=fq >> /etc/sysctl.conf
 echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf
-chsh -s /bin/zsh
+
 bash <(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
 sed -i "s/robbyrussell/agnoster/g" ~/.zshrc
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
