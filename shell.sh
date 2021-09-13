@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install curl wget zsh git sudo -y
+apt install curl wget zsh git sudo htop -y
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo "Asia/Shanghai" > /etc/timezone	
 
 sh <(curl -fsSL https://get.docker.com)
