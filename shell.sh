@@ -1,10 +1,12 @@
 #!/bin/bash
 apt install curl wget zsh git sudo htop -y
-ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo "Asia/Shanghai" > /etc/timezone	
+#ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo "Asia/Shanghai" > /etc/timezone	
+timedatectl set-timezone Asia/Shanghai
 
 #bash <(curl -fsSL https://get.docker.com)
 echo net.core.default_qdisc=fq >> /etc/sysctl.conf
 echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf
+sysctl -p
 chsh -s /bin/zsh
 
 
