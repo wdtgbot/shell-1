@@ -3,7 +3,7 @@
 GD_PATH="backup:Backup"
 
 # 定义备份的目录及文件，不同的目录用空格分开
-BACKUP_SRC="/root/*"
+BACKUP_SRC="/root"
 
 # 定义临时文件存放目录
 BACKUP_DST="/home/Backup"
