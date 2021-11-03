@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install zip unzip curl wget zsh git sudo htop -y
+apt install xz-utils zip unzip curl wget zsh git sudo htop -y
 #ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo "Asia/Shanghai" > /etc/timezone	
 timedatectl set-timezone Asia/Shanghai
 
