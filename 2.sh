@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sh <(curl -fsSL https://raw.githubusercontent.com/Ecalose/shell/main/1.sh)
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
