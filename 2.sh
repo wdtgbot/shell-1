@@ -5,6 +5,7 @@ bash <(curl -fsSL https://get.docker.com) &
 wait
 
 mkdir ss
+touch /root/ss/config.json
 cat << EOF > /root/ss/config.json
 {
 "server": "0.0.0.0",
