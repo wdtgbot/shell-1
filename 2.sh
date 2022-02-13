@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -fsSL https://get.docker.com -o get-docker.sh
-source /root/get-docker.sh &
+
+bash <(curl -fsSL https://get.docker.com) &
 wait
 docker pull ghcr.io/shadowsocks/ssserver-rust:latest
