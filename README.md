@@ -12,5 +12,5 @@ $Path = $env:TEMP; $Installer = "BraveBrowserSetup.exe"; Invoke-WebRequest "http
 
 ```
 apt install fuse -y
-rclone mount xinfan:/ /onedrive --config /root/.config/rclone/rclone.conf  --vfs-cache-mode writes  --use-mmap --daemon-timeout=10m --vfs-read-chunk-size 10M --vfs-read-chunk-size-limit 512M --cache-dir /home/rclone/vfs_cache --allow-other  --drive-chunk-size 128M --log-level INFO --log-file /var/log/rclone.log --timeout 1h --umask 002
+nohup rclone mount xinfan:/ /onedrive --config /root/.config/rclone/rclone.conf  --vfs-cache-mode writes  --use-mmap --daemon-timeout=10m --vfs-read-chunk-size 10M --vfs-read-chunk-size-limit 512M --cache-dir /home/rclone/vfs_cache --allow-other  --drive-chunk-size 128M --log-level INFO --log-file /var/log/rclone.log --timeout 1h --umask 002 &
 ```
