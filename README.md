@@ -18,3 +18,11 @@ nohup rclone mount xinfan:/ /onedrive --config /root/.config/rclone/rclone.conf 
 ```
 wget -qO- https://raw.githubusercontent.com/teddysun/across/master/bench.sh | bash
 ```
+
+```
+7zz a -p12345678 name.7z folder -v3g -m5=zstd -mx12 -mhe=on
+```
+
+```
+rclone move /up od:up --ignore-existing -u -v -P --transfers=10 --ignore-errors --buffer-size=200M --check-first --checkers=10
+```
