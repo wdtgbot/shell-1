@@ -24,5 +24,5 @@ wget -qO- https://raw.githubusercontent.com/teddysun/across/master/bench.sh | ba
 ```
 
 ```
-rclone --include "*.7z*" move /up od:up --ignore-existing -u -v -P --transfers=10 --ignore-errors --buffer-size=200M --check-first --checkers=10
+rclone --include "*.7z*" move /up od:up --ignore-existing -u -v -P --transfers=10 --ignore-errors --buffer-size=200M --check-first --checkers=10 --onedrive-chunk-size 102400 --header "user-agent:NONISV|Contoso|GovernanceCheck/1.0"
 ```
