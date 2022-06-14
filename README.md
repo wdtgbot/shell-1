@@ -26,3 +26,13 @@ wget -qO- https://raw.githubusercontent.com/teddysun/across/master/bench.sh | ba
 ```
 rclone --include "*.7z*" move /up od:up --ignore-existing -u -v -P --transfers=6 --ignore-errors --buffer-size=200M --check-first --checkers=10 --onedrive-chunk-size 102400 --user-agent "NONISV|Contoso|GovernanceCheck/1.0"
 ```
+
+uwp回环
+cmd
+```
+FOR /F "tokens=11 delims=\" %p IN ('REG QUERY "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings"') DO CheckNetIsolation.exe LoopbackExempt -a -p=%p
+```
+PowerShell
+```
+Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings\" -name | ForEach-Object {CheckNetIsolation.exe LoopbackExempt -a -p="$_"}
+```
