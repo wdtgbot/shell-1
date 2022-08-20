@@ -39,3 +39,11 @@ PowerShell
 ```
 Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings\" -name | ForEach-Object {CheckNetIsolation.exe LoopbackExempt -a -p="$_"}
 ```
+
+强制删除
+
+```
+takeown /F d:\Windows.old\* /R /A /D Y 
+cacls d:\Windows.old\*.* /T /grant administrators:F
+rmdir /S /Q d:\Windows.old
+```
