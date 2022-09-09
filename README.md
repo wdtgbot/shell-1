@@ -47,3 +47,7 @@ takeown /F d:\Windows.old\* /R /A /D Y
 cacls d:\Windows.old\*.* /T /grant administrators:F
 rmdir /S /Q d:\Windows.old
 ```
+
+```
+nohup commond > /dev/null 2>&1 &
+```
