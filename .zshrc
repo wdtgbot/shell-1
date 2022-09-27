@@ -100,3 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 setopt no_nomatch
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
