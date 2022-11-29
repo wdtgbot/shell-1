@@ -1,0 +1,36 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "/home/sb.txt",
+    "timestamp": true
+  },
+  "dns": {},
+  "inbounds": [
+    {
+      "type": "vmess",
+      "listen": "::",
+      "listen_port": ,
+      "users": [
+        {
+          "name": "sekai",
+          "uuid": "",
+          "alterId": 0
+        }
+      ],
+      "tls": {},
+      "transport": {
+        "type": "ws",
+	"path": "/"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-out"
+    }
+  ],
+  "route": {},
+  "experimental": {}
+}
