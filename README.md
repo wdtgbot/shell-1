@@ -51,3 +51,12 @@ rmdir /S /Q d:\Windows.old
 ```
 nohup commond > /dev/null 2>&1 &
 ```
+
+ub开放端口
+
+```
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P FORWARD ACCEPT
+sudo iptables -P OUTPUT ACCEPT
+sudo iptables -F
+```
