@@ -8,7 +8,7 @@
 
 3.  打开ssh配置文件
 
-`vi /etc/ssh/sshd_config`
+`nano /etc/ssh/sshd_config`
 
 4.  修改或添加下面配置
 
@@ -20,7 +20,7 @@
 
 5.  编辑认证文件authorized_keys
 
-`vi /root/.ssh/authorized_keys`
+`nano /root/.ssh/authorized_keys`
 
 [![](https://img2023.cnblogs.com/blog/3117309/202304/3117309-20230401171131034-477112069.png)
 ](https://img2023.cnblogs.com/blog/3117309/202304/3117309-20230401171131034-477112069.png)
