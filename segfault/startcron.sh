@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 要检查和追加的cron作业
-cronjob1="13 7 * * * /root/1.sh"
+cronjob1="13 7 * * * /root/1.sh  >> /var/log/startag.log 2>&1"
 cronjob2="13 5 * * * /root/2.sh"
 
 # 临时文件用于存储当前的crontab内容
