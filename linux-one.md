@@ -32,3 +32,10 @@
 只删掉这段，后面ssh那一大堆不要删
 
 6.  然后wq保存退出，这样就可以新建会话使用root账户进行登录了。
+7.  开放端口
+```
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P OUTPUT ACCEPT
+sudo iptables -P FORWARD ACCEPT
+sudo iptables -F
+```
